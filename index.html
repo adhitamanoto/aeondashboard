@@ -1,0 +1,48 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Demo Dashboard AEON Mall Jabodetabek</title>
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Chart.js (jika ingin di-load sebelum script utama) -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Dashboard Peta AEON Mall Jabodetabek (Demo dengan Data Dummy)</h1>
+
+    <!-- Filter untuk memilih mall -->
+    <div class="filter-container">
+      <label for="mallSelect">Pilih Mall:</label>
+      <select id="mallSelect">
+        <option value="all">Semua Mall</option>
+        <!-- Opsi akan diisi dinamis via script.js -->
+      </select>
+    </div>
+
+    <!-- Peta Interaktif -->
+    <div id="map"></div>
+
+    <!-- Insight sederhana -->
+    <div id="insights"></div>
+
+    <!-- Info cards -->
+    <div id="info-cards"></div>
+
+    <!-- Chart pengunjung -->
+    <div class="chart-container">
+      <canvas id="visitorChart"></canvas>
+    </div>
+  </div>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+</html>
